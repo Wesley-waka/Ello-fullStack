@@ -1,30 +1,76 @@
-# React + TypeScript + Vite
+# ELLO BOOKS APP
+ELLO BOOKS
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents
 
-Currently, two official plugins are available:
+- [Overview](#overview)
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [API](#api)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## Expanding the ESLint configuration
+**ELLO BOOKS** is a web application that enables teachers search through books of their choice according to the Relevance,author,reading level and title.They are able to assign specific books to students to Read by simply clicking on the book of choice and app will be updated by adding book to reading list book section. It is built using React,Vite,Material-ui and Redux.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+##### Book Listing Functionality
+![Screenshot](/public/assets/screen/r1.png)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+##### Search Functionality
+![Screenshot](/public/assets/screen/r2.png)
+
+
+##### BookMarking Functionality
+![Screenshot](/public/assets/screen/r3.png)
+
+
+##### Sorting Functionality
+![Screenshot](/public/assets/screen/r4.png)
+
+
+##### Reading List Functionality
+![Screenshot](/public/assets/screen/r5.png)
+
+
+
+## Demo
+
+Check out the live demo [here](https://example.com).
+
+## Installation
+
+### Prerequisites
+
+- [List any prerequisites, e.g., Node.js, npm, Docker, etc.]
+
+### Steps
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/web-app-name.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd web-app-name
+    ```
+3. Install dependencies:
+    ```sh
+    npm install
+    ```
+4. Set up environment variables (see [Configuration](#configuration)).
+
+## Usage
+
+To start the development server:
+
+```sh
+npm start
