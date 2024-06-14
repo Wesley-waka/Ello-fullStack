@@ -1,4 +1,3 @@
-// actions.ts
 import { SORT_BOOKS, ADD_TO_READING_LIST,SIDEBAR_OPEN, Book, FETCH_BOOKS_SUCCESS,  REMOVE_FROM_READING_LIST, SEARCH_BOOKS, SIDEBAR_CLOSE } from '../../services/types';
 
 export const sortBooks = (criterion: string) => ({

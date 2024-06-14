@@ -5,8 +5,8 @@ import CardContent from '@mui/joy/CardContent';
 import Typography from '@mui/joy/Typography';
 import { Box, Grid } from '@mui/material';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
-import { Book } from '../../services/types';
-import { addToReadingList, removeFromReadingList } from '../../redux/actions';
+import { Book } from '../../services/types.ts';
+import { addToReadingList, removeFromReadingList } from '../../redux/actions/index.ts';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { BookState } from '../../redux/reducers/reducer.ts';
@@ -110,19 +110,12 @@ const { textColor, backgroundColor } = getColorClasses(colors);
         width: '100%',
         display: "flex",
         alignItems: "flex-start",
-        justifyContent: 'space-between', // Added for spacing between icon and text
+        justifyContent: 'space-between',
 
       }}
     >
-      {/* <Box  sx={{
-        // fontWeight: 'bold',
-        width: '80%',
-        display: 'flex',
-        // Added for vertical centering
-      }}> */}
         {isInReadingList(book) ? <BookmarkIcon/> : <BookmarkBorderIcon/>}
         <div>{isInReadingList(book)? 'Remove Book' : 'Add Book'}</div>
-      {/* </Box> */}
     </Button>
       
       </div>

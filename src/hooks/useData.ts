@@ -32,7 +32,6 @@ const useData = (query?: query, deps?: DependencyList) => {
 
     setLoading(true);
     
-    // Introduce a delay of 4000 milliseconds (4 seconds)
     setTimeout(() => {
       axios
        .post<GraphQLResponse<{ books: Book[] }>>(
@@ -48,7 +47,7 @@ const useData = (query?: query, deps?: DependencyList) => {
           setError(err.message);
           setLoading(false);
         });
-    }, 4000); // Delay added here
+    }, 4000); 
 
     return () => controller.abort();
   // eslint-disable-next-line react-hooks/exhaustive-deps

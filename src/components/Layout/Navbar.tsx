@@ -1,9 +1,7 @@
 import styled from 'styled-components'
 import logo from '/logo.svg'
-// import { FaBars } from 'react-icons/fa'
 import { Link, useLocation } from 'react-router-dom'
 import { openSidebar } from '../../redux/actions';
-// import { links } from '../utils/constants'
 import MenuIcon from '@mui/icons-material/Menu';
 import { useDispatch } from 'react-redux';
 import BookIcon from '@mui/icons-material/Book';

@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { BookState } from '../redux/reducers/reducer.ts';
 import { Book } from '../services/types.ts';
 import Layout from '../components/Layout/Layout';
-import Teamcard from '../components/Layout/Teamcard'; 
+import Teamcard from '../components/Layout/BookCard.tsx'; 
 import { Grid, Pagination } from '@mui/material';
 import Empty from '/empty.svg';
 

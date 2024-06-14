@@ -53,26 +53,8 @@ export default function MediaControlCard({title, photoURL,book}: Props) {
           <Typography component="div" variant="subtitle1">
           {title}
           </Typography>
-          {/* <Typography variant="subtitle1" color="text.secondary" component="div">
-            By {author}
-          </Typography> */}
         </CardContent>
         {isInReadingList(book) ? <BookmarkIcon/> : <BookmarkBorderIcon/>}
-
-        {/* <Typography variant="subtitle1" color="text.secondary" component="div">
-            Level
-        </Typography>
-        <div >{readingLevel}</div> */}
-        {/* <Button
-          variant="outlined"
-          size="medium"
-          color="primary"
-          onClick={() => handleToggleReadingList(book)} // Correctly pass the function
-          sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}
-        >
-        <BookmarkBorderIcon sx={{ marginRight: '8rem' }} />
-        <div>{isInReadingList(book)?  'Remove Reading List': 'Add to Reading List'}</div>
-      </Button> */}
       </Box>
       
     </Card>

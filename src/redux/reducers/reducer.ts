@@ -17,7 +17,7 @@ const initialState: BookState = {
 };
 
 const sortArray = (array: Book[], criterion: string): Book[] => {
-  const sortedArray = [...array]; // Create a copy of the array
+  const sortedArray = [...array]; 
   switch (criterion) {
     case '':
       return sortedArray;
@@ -26,7 +26,7 @@ const sortArray = (array: Book[], criterion: string): Book[] => {
     case 'title':
       return sortedArray.sort((a, b) => a.title.localeCompare(b.title));
     case 'readingLevel':
-      return sortedArray.sort((a, b) => a.readingLevel.localeCompare(b.readingLevel)); // Assuming readingLevel is a string
+      return sortedArray.sort((a, b) => a.readingLevel.localeCompare(b.readingLevel)); 
     default:
       return sortedArray;
   }
@@ -34,7 +34,7 @@ const sortArray = (array: Book[], criterion: string): Book[] => {
 
 const searchArray = (array: Book[], query: string): Book[] => {
   if (!query) {
-    return []; // Return an empty array if the query is empty or null
+    return []; 
   }
   const lowerCaseQuery = query.toLowerCase();
   return array.filter(book =>
@@ -63,7 +63,7 @@ const bookReducer = (state = initialState, action: BookActionTypes): BookState =
         bookSearch: searchArray(state.books, payload), 
       };
     case ADD_TO_READING_LIST: {
-      if (!payload) return state; // Add a check to prevent destructuring if payload is undefined
+      if (!payload) return state; 
       const { title, author, readingLevel, coverPhotoURL } = payload;
       const existingItem = state.readingList.find(item => item.title === title);
       if (existingItem) {
@@ -73,11 +73,10 @@ const bookReducer = (state = initialState, action: BookActionTypes): BookState =
       return { ...state, readingList: [...state.readingList, newItem] };
     }
     case REMOVE_FROM_READING_LIST: {
-      if (!payload) return state; // Add a check to prevent destructuring if payload is undefined
+      if (!payload) return state; 
       const { title } = payload;
       const updatedReadingList = state.readingList.filter(item => item.title !== title);
       if (updatedReadingList.length === state.readingList.length) {
-        // If no item was removed, return the current state
         return state;
       } else {
         return { ...state, readingList: updatedReadingList };

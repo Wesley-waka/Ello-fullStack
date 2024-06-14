@@ -21,7 +21,6 @@ const SearchResultsList = ({ results }: Prop) => {
       {results.map((result, id) => {
         return <div key={id}
         className="search-result"
-        // onClick={(e) => alert(`You selected ${result}!`)}
       >
       <SearchCard book={result} title={result.title} key={id} author={result.author} readingLevel={result.readingLevel} photoURL={result.coverPhotoURL}/>
       
@@ -32,7 +31,6 @@ const SearchResultsList = ({ results }: Prop) => {
 };
 
 const SearchInput = ({ handleSearch, query }: Props) => {
-  // const ref = useRef("");
   const bookSearch = useSelector((state: { books: BookState }) => state.books.bookSearch);
   
   console.log(bookSearch);
@@ -41,11 +39,9 @@ const SearchInput = ({ handleSearch, query }: Props) => {
     <>
     <form onSubmit={(event) => {
       event.preventDefault();
-      // handleSearch(query);
     }}>
       <div className="input-wrapper">
       <FaSearch id="search-icon" />
-        {/* <div children={<BsSearch />} /> */}
         <input value={query} type="text"  placeholder="Search books..." onChange={handleSearch}/>
       {bookSearch && bookSearch.length > 0 && <SearchResultsList results={bookSearch} />}
       </div>
