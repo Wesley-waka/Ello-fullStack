@@ -8,16 +8,11 @@ ELLO BOOKS
 - [Features](#features)
 - [Demo](#demo)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Configuration](#configuration)
 - [API](#api)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Overview
 
-**ELLO BOOKS** is a web application that enables teachers search through books of their choice according to the Relevance,author,reading level and title.They are able to assign specific books to students to Read by simply clicking on the book of choice and app will be updated by adding book to reading list book section. It is built using React,Vite,Material-ui and Redux.
+[**ELLO BOOKS**](https://fullstack-test-mocha.vercel.app/) is a web application that enables teachers search through books of their choice according to the Relevance,author,reading level and title.They are able to assign specific books to students to Read by simply clicking on the book of choice and app will be updated by adding book to reading list book section. It is built using React,Vite,Material-ui and Redux.
 
 ## Features
 
@@ -50,27 +45,42 @@ Check out the live demo [here](https://example.com).
 
 ### Prerequisites
 
-- [List any prerequisites, e.g., Node.js, npm, Docker, etc.]
+- npm
+- node js
+- git
+- Code Editor(Visual Studio)
 
 ### Steps
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/web-app-name.git
+    git clone git@github.com:Wesley-waka/Ello-fullStack.git
     ```
 2. Navigate to the project directory:
     ```sh
-    cd web-app-name
+    cd Ello-fullStack
     ```
 3. Install dependencies:
     ```sh
     npm install
     ```
-4. Set up environment variables (see [Configuration](#configuration)).
+4. Run Server:
+    ```sh
+    npm run dev
+    ```
+
 
 ## Usage
 
 To start the development server:
 
 ```sh
-npm start
+npm run dev
+```
+
+## API
+API is hosted in Vercel Built using Node
+
+```sh
+    https://graphql-books-server-ig8u.vercel.app/graphql
+```
