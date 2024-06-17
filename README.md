@@ -39,7 +39,7 @@
 
 ## Demo
 
-Check out the live demo [here]( fullstack-test-mocha.vercel.app/ ).
+Check out the live demo [here](https://fullstack-test-mocha.vercel.app/).
 
 ## Installation
 
